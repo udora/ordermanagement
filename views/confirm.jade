@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  h2= message
+    
+  form(action='/status', method='POST')
+   pre
+
+     
+       label POHeaderID		     :
+       input(type='text',id='POHeaderID', name='POHeaderID' value='')
+       br
+       br
+    
+    
+       input(type='submit', value='Check Order Status!')
+   

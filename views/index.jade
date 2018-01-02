@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  h1= title
+  p Enter order details and submit!!!!
+  
+  form(action='/order', method='POST')
+   pre
+
+     
+       label E-mail			     :
+       input(type='text',id='Email', name='Email')
+       br
+       br
+     
+       label Item Description             :
+       input(type='text',id='ItemDescription', name='ItemDescription' value='Printer M32240')
+       br
+       br
+     
+       label Price			     :
+       input(type='text',id='Price', name='Price' value='20000')
+       br
+       br
+     
+       label Quantity		     :
+       input(type='text',id='Quantity', name='Quantity' value='2')
+       br
+       br
+    
+       input(type='submit', value='Create Order !')
+   
